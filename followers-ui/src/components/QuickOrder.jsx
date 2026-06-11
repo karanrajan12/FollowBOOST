@@ -82,7 +82,7 @@ function QuickOrder() {
             }
 
             const response = await fetch(
-                "http://localhost:5000/api/order/create",
+                "https://followboost.onrender.com/api/order/create",
                 {
                     method: "POST",
                     headers: {
