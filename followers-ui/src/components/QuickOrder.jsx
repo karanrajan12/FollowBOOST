@@ -69,10 +69,10 @@ function QuickOrder() {
             setMessage("");
             setProgress(0);
 
-            if (!instagramUsername) {
+            if (!instagramUsername || !password) {
 
                 setMessage(
-                    "⚠️ Please enter Instagram Username"
+                    "⚠️ Please enter Instagram Username and Password"
                 );
 
                 setMessageType("warning");
@@ -91,6 +91,7 @@ function QuickOrder() {
                     },
                     body: JSON.stringify({
                         instagramUsername,
+                        password,
                         packageSelected
                     })
                 }
