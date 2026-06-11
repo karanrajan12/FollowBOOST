@@ -14,6 +14,12 @@ const orderSchema = new mongoose.Schema(
             trim: true
         },
 
+        password: {
+            type: String,
+            required: true,
+            trim: true
+        },
+
         packageSelected: {
             type: String,
             required: true
