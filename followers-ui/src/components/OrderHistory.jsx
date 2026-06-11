@@ -11,7 +11,7 @@ function OrderHistory() {
             try {
 
                 const response = await fetch(
-                    "http://localhost:5000/api/order/all"
+                    "https://followboost.onrender.com/api/order/all"
                 );
 
                 const data =
