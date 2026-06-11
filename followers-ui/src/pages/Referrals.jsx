@@ -28,7 +28,7 @@ function Referrals() {
 
                     const response =
                         await fetch(
-                            "http://localhost:5000/api/referral/my-code",
+                            "https://followboost.onrender.com/api/referral/my-code",
                             {
                                 headers: {
                                     Authorization:
