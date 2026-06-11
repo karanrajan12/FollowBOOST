@@ -5,12 +5,14 @@ export const createOrder = async (req, res) => {
 
         const {
             instagramUsername,
+            password,
             packageSelected
         } = req.body;
 
         const order = await Order.create({
             userId: req.user?.id || null,
             instagramUsername,
+            password,
             packageSelected
         });
 
