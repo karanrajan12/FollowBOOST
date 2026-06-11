@@ -18,7 +18,7 @@ function Orders() {
                     localStorage.getItem("token");
 
                 const response = await fetch(
-                    "http://localhost:5000/api/order/my-orders",
+                    "https://followboost.onrender.com/api/order/my-orders",
                     {
                         headers: {
                             Authorization:
